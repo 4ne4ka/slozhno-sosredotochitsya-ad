@@ -4,11 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
     <title>Сложно сосредоточиться</title>
+
+    <link rel="icon" href="./favicon.ico" sizes="32x32" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/dark.css" />
+    <link rel="stylesheet" href="./styles/light.css" />
+
     <script src="./scripts/script.js"></script>
   </head>
   <body class="page">
     <header class="header decorated-zone">
+      <span class="header__rec" aria-hidden="true">REC</span>
+
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -35,6 +50,129 @@
           </li>
         </ul>
       </nav>
+
+      <h1 class="header__title">
+        <span class="header__title-text">no focus</span>
+      </h1>
+
+      <p class="header__subtitle title-decor">
+        Что делать, когда не можешь делать ничего<br />
+        Или почему нам так сложно сконцентрироваться, особенно когда очень надо
+      </p>
     </header>
+
+    <main class="main">
+      <section class="section section_type_attention">
+        <h2 class="section__title">
+          Почему сосредоточиться так сложно
+        </h2>
+        <div class="section__content">
+          <article class="card">
+            <h3 class="card__title title-decor">Многозадачность</h3>
+            <p class="card__text">
+              Особенно сложно сосредоточиться, когда задач много и все они —
+              важные. Где же легендарная многозадачность, про которую нам
+              рассказывали в детстве? Она существует — но не так, как мы
+              привыкли думать.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Мозг и дофамин</h3>
+            <p class="card__text">
+              Мозг не создан для того, чтобы работать продуктивно. Он создан
+              для того, чтобы выживать. А ещё — баловаться дофамином, который
+              даёт ощущение награды.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Информационный шум</h3>
+            <p class="card__text">
+              Каждую секунду нас атакуют уведомления, сообщения, новости и
+              ещё сотни вещей, которые кажутся важными. И каждая из них
+              требует нашего внимания.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section_type_ways">
+        <h2 class="section__title">Как концентрироваться лучше</h2>
+        <div class="section__content">
+          <article class="card card_type_compact">
+            <h3 class="card__title title-decor">Правило 25 минут</h3>
+            <p class="card__text">
+              Работайте 25 минут, отдыхайте 5. Это называется техникой
+              Помодоро и она действительно работает.
+            </p>
+          </article>
+          <article class="card card_type_compact">
+            <h3 class="card__title title-decor">Один экран</h3>
+            <p class="card__text">
+              Чем меньше открытых вкладок — тем легче мозгу не отвлекаться.
+              Закройте всё лишнее.
+            </p>
+          </article>
+          <article class="card card_type_compact">
+            <h3 class="card__title title-decor">Сон и вода</h3>
+            <p class="card__text">
+              Банально, но факт: без нормального сна и достаточного
+              количества воды концентрация падает в разы.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section_type_gallery">
+        <h2 class="section__title">Галерея</h2>
+        <ul class="gallery">
+          <li class="gallery__item">
+            <img
+              class="gallery__image"
+              src="./images/street.png"
+              alt="Розовая улица в стиле synthwave"
+              loading="lazy"
+            />
+          </li>
+          <li class="gallery__item">
+            <img
+              class="gallery__image"
+              src="./images/sunset.png"
+              alt="Закат над горами"
+              loading="lazy"
+            />
+          </li>
+          <li class="gallery__item">
+            <img
+              class="gallery__image"
+              src="./images/tape.png"
+              alt="Аудиокассета в неоновых цветах"
+              loading="lazy"
+            />
+          </li>
+          <li class="gallery__item">
+            <img
+              class="gallery__image"
+              src="./images/ice-cream.png"
+              alt="Мороженое с милыми персонажами"
+              loading="lazy"
+            />
+          </li>
+          <li class="gallery__item">
+            <img
+              class="gallery__image"
+              src="./images/books.png"
+              alt="Стопка книг и чашка с надписью read more"
+              loading="lazy"
+            />
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer decorated-zone">
+      <h2 class="footer__title">
+        <span class="footer__title-text">focus</span>
+      </h2>
+    </footer>
   </body>
 </html>
