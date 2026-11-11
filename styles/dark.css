@@ -1,20 +1,17 @@
-/*
-  Стили тёмной темы.
-  Тёмная тема — основная, поэтому переменные в :root уже содержат
-  её значения. Здесь переопределяем их же для явного класса,
-  чтобы переключение через кнопку работало.
-*/
 :root.theme-dark {
-  --bg-color: #000028;
-  --bg-image: url('../images/dark.png');
-  --accent-color: #ff0070;
-  --title-color: #db00ff;
-  --text-color: #f1b2ce;
-  --decor-text-color: #000028;
-  --rec-color: #ff0070;
-  --rec-visible: block;
+  --accent-clr: #ff0070;
+  --accent-clr-with-background: #000028;
+  --accent-heading-clr: #db00ff;
+  --text-clr: #f1b2ce;
+  --button-hover-clr: #ff007066;
+  --heading-clr: #ff0070;
+  --decorative-bracket-clr: #ff0070;
+  --menu-clr: #ff0070;
+  --headers-clr: #ff0070;
+  --rec-decoration-clr: #ff0070;
+  --cover-image: url('../images/cover-image-dark.png');
 }
 
-.theme-dark .header__rec {
-  display: var(--rec-visible);
+.theme-dark .decorative-rec-icon {
+  display: block;
 }

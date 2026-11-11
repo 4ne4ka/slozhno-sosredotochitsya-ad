@@ -1,33 +1,36 @@
-/*
-  Стили светлой темы.
-*/
 :root.theme-light {
-  --bg-color: #fff1f7;
-  --bg-image: url('../images/light.png');
-  --accent-color: #ff8dcb;
-  --title-color: #ffc2e2;
-  --text-color: #353430;
-  --decor-text-color: #353430;
-  --rec-visible: none;
+  --cover-image: url('../images/cover-image-light.png');
+  --accent-clr: #ff8dcb;
+  --accent-clr-with-background: #353430;
+  --accent-heading-clr: #ffc2e6;
+  --text-clr: #353430;
+  --button-hover-clr: #32312d66;
+  --decorative-bracket-clr: #353430;
+  --menu-clr: #353430;
+  --rec-decoration-clr: transparent;
+  --heading-clr: #353430;
 }
 
-.theme-light .header__rec {
-  display: var(--rec-visible);
+.theme-light .decorative-rec-icon {
+  display: none;
 }
 
 /* Авто-тема: если в системе светлая — берём переменные светлой темы */
 @media (prefers-color-scheme: light) {
   :root:not(.theme-dark):not(.theme-light) {
-    --bg-color: #fff1f7;
-    --bg-image: url('../images/light.png');
-    --accent-color: #ff8dcb;
-    --title-color: #ffc2e2;
-    --text-color: #353430;
-    --decor-text-color: #353430;
-    --rec-visible: none;
+    --cover-image: url('../images/cover-image-light.png');
+    --accent-clr: #ff8dcb;
+    --accent-clr-with-background: #353430;
+    --accent-heading-clr: #ffc2e6;
+    --text-clr: #353430;
+    --button-hover-clr: #32312d66;
+    --decorative-bracket-clr: #353430;
+    --menu-clr: #353430;
+    --rec-decoration-clr: transparent;
+    --heading-clr: #353430;
   }
 
-  :root:not(.theme-dark):not(.theme-light) .header__rec {
-    display: var(--rec-visible);
+  :root:not(.theme-dark):not(.theme-light) .decorative-rec-icon {
+    display: none;
   }
 }
